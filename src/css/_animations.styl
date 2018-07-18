@@ -5,22 +5,26 @@
   appear Must set transitionAppear={true} on animation component
 */
 
-.order-enter
+.fish-total-enter {
   transform: translateX(-120%)
-  transition 0.5s
+  transition: 0.5s
   max-height: 0
   padding 0 !important
-  &.order-enter-active
-    max-height 60px
+}
+.fish-total-enter-active {
+    max-height: 60px
     transform: translateX(0)
-    padding 2rem 0 !important
+    padding: 2rem 0 !important
+}
 
-.order-exit
-  transition 0.5s
+.fish-total-exit {
+  transition: 0.5s
   transform: translateX(0)
-  &.order-exit-active
+}
+.fish-total-exit-active{
     transform: translateX(120%)
     padding: 0
+}
 
 
 .count-enter
