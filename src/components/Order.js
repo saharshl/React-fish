@@ -11,13 +11,13 @@ class Order extends React.Component {
         if(!fish) return null;
         if(!availibility) {
         return (
-        <CSSTransition classNames='fish-total' key={key} timeout={{ enter:250,exit:250 }}>
+        <CSSTransition classNames='fish-total' key={key} timeout={{ enter: 5000,exit: 5000 }}>
         <li key={key}>Sorry fish is not available</li>
         </CSSTransition>
         )
     }
         return (
-            <CSSTransition classNames='fish-total' key={key} timeout={{ enter:250, exit:250 }}>
+            <CSSTransition classNames='fish-total' key={key} timeout={{ enter: 5000, exit: 5000 }}>
             <li key={key}>
                 {count} lbs {fish.name}
 
